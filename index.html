@@ -20,7 +20,7 @@
 
         <div class="tasks">
             <div class="task" v-for="(todo, index) in todos" >
-                <h4 :class="{completato: todos[index].done}" @click="changeDoneValue()">{{todos[index].testo}}</h4>
+                <h4 :class="{completato: todos[index].done}" @click="changeDoneValue(index)">{{todos[index].testo}}</h4>
                 <div class="remove" @click="deleteTodo(index)">
                     <i class="fa-solid fa-trash"></i>
                 </div>
