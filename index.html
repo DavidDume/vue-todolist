@@ -19,9 +19,9 @@
         </div>
 
         <div class="tasks">
-            <div class="task">
-                <h4>Fare spesa</h4>
-                <div class="remove">
+            <div class="task" v-for="(todo, index) in todos" >
+                <h4 :class="todos[index].done?'completato':''">{{todos[index].testo}}</h4>
+                <div class="remove" :class="done?'completato':''">
                     <i class="fa-solid fa-trash"></i>
                 </div>
             </div>

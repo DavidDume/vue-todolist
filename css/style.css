@@ -47,6 +47,7 @@ body {
 .task h4 {
     width: 100%;
     padding: 10px 0;
+    letter-spacing: 1px;
 }
 
 .remove {
@@ -61,4 +62,10 @@ body {
 .remove:hover {
     background-color: #a8dadc;
     cursor: pointer;
+}
+
+.completato {
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
 }
