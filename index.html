@@ -14,8 +14,8 @@
     
     <div id="app">
         <div class="inputGroup">
-            <input type="text">
-            <button class="btn">Add Task</button>
+            <input type="text" v-model="addedTodo.testo">
+            <button class="btn" @click="addTodo">Add Task</button>
         </div>
 
         <div class="tasks">

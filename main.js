@@ -3,6 +3,10 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+      addedTodo: {
+        testo: '',
+        done: false
+      },
       todos: [
         {
           testo: 'spesa',
@@ -22,6 +26,11 @@ createApp({
   methods: {
     deleteTodo(index) {
       this.todos.splice(index, 1)
+    },
+    addTodo() {
+      const newObj = {...this.addedTodo}
+      this.todos.push(newObj)
+      this.addedTodo.testo = ''
     }
   }
 }).mount('#app')
