@@ -7,3 +7,58 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.inputGroup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputGroup > * {
+    margin: 5px;
+    padding: 5px;
+}
+
+.btn {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin: 50px auto;
+    background-color: #457b9d;
+    color: white;
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+
+.task h4:hover {
+    background-color: #a8dadc;
+    cursor: pointer;
+}
+
+.task h4 {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.remove {
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove:hover {
+    background-color: #a8dadc;
+    cursor: pointer;
+}
