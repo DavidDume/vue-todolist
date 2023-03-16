@@ -31,6 +31,10 @@ createApp({
       const newObj = {...this.addedTodo}
       this.todos.push(newObj)
       this.addedTodo.testo = ''
+    },
+    changeDoneValue() {
+      this.todos.done = !this.todos.done
+      console.log(this.todos.done);
     }
   }
 }).mount('#app')
